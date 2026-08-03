@@ -16,7 +16,7 @@ return new class extends Migration
 
     $table->string('name',100);
 
-    $table->enum('role', ['student','teacher']);
+    $table->enum('role', ['student','teacher', 'admin']);
 
     $table->string('class',30)->nullable();
 

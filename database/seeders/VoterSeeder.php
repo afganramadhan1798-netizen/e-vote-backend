@@ -18,7 +18,7 @@ class VoterSeeder extends Seeder
             // SISWA
             // =========================
             [
-                'voter_code' => '23110001',
+                'voter_code' => '14143',
                 'name' => 'Afgan Ramadhan',
                 'role' => 'student',
                 'class' => 'XI RPL',
@@ -27,8 +27,8 @@ class VoterSeeder extends Seeder
             ],
 
             [
-                'voter_code' => '23110002',
-                'name' => 'Ahmad Farhan',
+                'voter_code' => '14144',
+                'name' => 'Ahmad Aliffansyah',
                 'role' => 'student',
                 'class' => 'XI RPL',
                 'position' => null,
@@ -36,8 +36,8 @@ class VoterSeeder extends Seeder
             ],
 
             [
-                'voter_code' => '23110003',
-                'name' => 'Rizky Pratama',
+                'voter_code' => '14146',
+                'name' => 'Altaf Azka Aviantara',
                 'role' => 'student',
                 'class' => 'XI RPL',
                 'position' => null,
@@ -45,10 +45,10 @@ class VoterSeeder extends Seeder
             ],
 
             [
-                'voter_code' => '23110004',
-                'name' => 'Siti Aisyah',
-                'role' => 'student',
-                'class' => 'XI AKL 1',
+                'voter_code' => '123456',
+                'name' => 'Hangker',
+                'role' => 'admin',
+                'class' => 'unknoqn',
                 'position' => null,
                 'status' => 'active',
             ],
