@@ -25,8 +25,8 @@ class Voter extends Model
      * Relasi ke tabel votes.
      * Satu voter hanya memiliki satu vote.
      */
-    public function vote(): HasOne
-    {
-        return $this->hasOne(Vote::class);
-    }
+    public function vote()
+{
+    return $this->hasOne(Votes::class, 'voter_id');
+}
 }
