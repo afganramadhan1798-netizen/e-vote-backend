@@ -24,7 +24,7 @@ class Candidates extends Model
     public function getPhotoUrlAttribute()
         {
             return $this->photo
-                ? asset('storage/' . $this->photo)
+                ? asset($this->photo)
                 : null;
         }
 }
