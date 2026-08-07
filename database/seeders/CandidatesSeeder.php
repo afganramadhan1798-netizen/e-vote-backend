@@ -15,22 +15,22 @@ class CandidatesSeeder extends Seeder
         $candidates = [
             [
                 'number' => '1',
-                'name' => 'Fadlan Dzilikram & Pragita',
-                'photo' => '-',
+                'name' => 'Afgan & Altaf',
+                'photo' => 'candidates/afaf.png',
                 'vision' => '-',
                 'mission' => '-',
             ],
             [
                 'number' => '2',
-                'name' => 'Meylani Al Meyra & Hisyam',
-                'photo' => '-',
+                'name' => 'Luna & Afgan',
+                'photo' => 'candidates/aflun.png',
                 'vision' => '-',
                 'mission' => '-',
             ],
             [
                 'number' => '3',
-                'name' => 'Ahmad Farhan & Kirana',
-                'photo' => '-',
+                'name' => 'Farhan & Afgan',
+                'photo' => 'candidates/fargan.png',
                 'vision' => '-',
                 'mission' => '-',
             ],
