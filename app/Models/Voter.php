@@ -21,6 +21,8 @@ class Voter extends Model
         'updated_at' => 'datetime',
     ];
 
+    protected $appends = ['has_voted'];
+
     /**
      * Relasi ke tabel votes.
      * Satu voter hanya memiliki satu vote.
@@ -28,5 +30,10 @@ class Voter extends Model
     public function vote()
 {
     return $this->hasOne(Votes::class, 'voter_id');
+}
+
+    public function getHasVotedAttribute(): bool
+{
+    return $this->vote()->exists();
 }
 }

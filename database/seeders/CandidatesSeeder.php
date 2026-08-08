@@ -13,6 +13,7 @@ class CandidatesSeeder extends Seeder
     public function run(): void
     {
         $candidates = [
+<<<<<<< HEAD
             // [
             //     'number' => '1',
             //     'name' => 'Fadlan Dzilikram & Pragita',
@@ -34,6 +35,29 @@ class CandidatesSeeder extends Seeder
             //     'vision' => '-',
             //     'mission' => '-',
             // ],
+=======
+            [
+                'number' => '1',
+                'name' => 'Afgan & Altaf',
+                'photo' => 'candidates/afaf.png',
+                'vision' => '-',
+                'mission' => '-',
+            ],
+            [
+                'number' => '2',
+                'name' => 'Luna & Afgan',
+                'photo' => 'candidates/aflun.png',
+                'vision' => '-',
+                'mission' => '-',
+            ],
+            [
+                'number' => '3',
+                'name' => 'Farhan & Afgan',
+                'photo' => 'candidates/fargan.png',
+                'vision' => '-',
+                'mission' => '-',
+            ],
+>>>>>>> 8d43ef48fc92e0e3f111481daab0102442c29389
         ];
 
         foreach ($candidates as $candidate) {
