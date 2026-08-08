@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('position',100)->nullable();
             $table->enum('status',['active','inactive'])->default('active');
             $table->timestamps();
-            $table->index('role');
             $table->index('status');
         });
     }
