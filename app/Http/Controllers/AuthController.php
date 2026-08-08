@@ -19,7 +19,7 @@ class AuthController extends Controller
     if (!$voter) {
         return response()->json([
             'success' => false,
-            'message' => 'NIS / NIP tidak terdaftar.'
+            'message' => 'NIS / NIP tidak terdaftar. Silahkan periksa kembali NIS / NIP yang anda gunakan atau hubungi panitia.'
         ], 404);
     }
 
