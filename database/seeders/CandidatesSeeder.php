@@ -22,8 +22,8 @@ class CandidatesSeeder extends Seeder
             ],
             [
                 'number' => '2',
-                'name' => 'Luna & Afgan',
-                'photo' => 'candidates/aflun.png',
+                'name' => 'Afgan & Rasya',
+                'photo' => 'candidates/afras.png',
                 'vision' => '-',
                 'mission' => '-',
             ],

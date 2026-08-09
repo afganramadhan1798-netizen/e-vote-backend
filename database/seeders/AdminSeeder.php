@@ -13,12 +13,12 @@ class AdminSeeder extends Seeder
     public function run(): void
     {
         Voter::updateOrCreate(
-            ['voter_code' => 'admin123'],
+            ['voter_code' => 'ADMIN001'],
             [
-                'name' => 'Administrator',
+                'name' => 'Admin Ganteng',
                 'role' => 'admin',
                 'class' => null,
-                'position' => null,
+                'position' => 'Administrator',
                 'status' => 'active',
             ]
         );

@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Votes;
 use App\Models\Voter;
 use App\Models\Candidates;
-
+use App\Exports\VotesExport;
+use Maatwebsite\Excel\Facades\Excel;
 class AdminDashboardController extends Controller
 {
     public function index()
@@ -25,4 +26,12 @@ class AdminDashboardController extends Controller
         })
     );
 }
+
+    public function exportVotes()
+    {
+        return Excel::download(
+            new VotesExport,
+            'rekap-voting.xlsx'
+        );
+    }
 }

@@ -10,3 +10,4 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::post('/vote',[VoteController::class,'store']);
 Route::get('/candidates', [CandidateController::class, 'index']);
 Route::get('/admin/dashboard', [AdminDashboardController::class, 'index']);
+Route::get('/admin/export-votes',[AdminDashboardController::class, 'exportVotes']);
