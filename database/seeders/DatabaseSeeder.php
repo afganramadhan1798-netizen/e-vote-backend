@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
         Voter::query()->delete();
 
         DB::statement('ALTER TABLE voters AUTO_INCREMENT = 1');
-        
+
         // Seed data voter baru
         $this->call([
             AdminSeeder::class,
