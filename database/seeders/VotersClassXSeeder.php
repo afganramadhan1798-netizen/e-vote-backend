@@ -2571,7 +2571,6 @@ class VotersClassXSeeder extends Seeder
         DB::table('voters')->upsert(
             $voters,
             ['voter_code'],
-
             ['name', 'role', 'class', 'position', 'status']
         );
     }
