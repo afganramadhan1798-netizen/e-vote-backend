@@ -6,8 +6,9 @@ use App\Models\Votes;
 use Maatwebsite\Excel\Concerns\FromQuery;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\WithMapping;
+use Maatwebsite\Excel\Concerns\ShouldAutoSize;
 
-class VotesExport implements FromQuery, WithHeadings, WithMapping
+class VotesExport implements FromQuery, WithHeadings, WithMapping, ShouldAutoSize
 {
     public function query()
     {
@@ -35,7 +36,7 @@ class VotesExport implements FromQuery, WithHeadings, WithMapping
     {
         return [
             $vote->id,
-            $vote->voter->voter_code ?? '-',
+            "'" . ($vote->voter->voter_code ?? '-'),
             $vote->voter->name ?? '-',
             $vote->voter->role ?? '-',
             $vote->voter->class ?? '-',
