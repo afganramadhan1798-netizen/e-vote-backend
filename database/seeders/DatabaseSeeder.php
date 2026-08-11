@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
 
             TeacherSeeder::class,
             TendikSeeder::class,
+            CandidatesSeeder::class,
         ]);
     }
 }
